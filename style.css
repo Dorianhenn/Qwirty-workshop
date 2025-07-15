@@ -24,17 +24,19 @@ body {
   margin-right: 15px;
 }
 
-.top-nav .left-links a:last-chiild,
+.top-nav .left-links a:last-child,
 .top-nav .right-links a:last-child {
   margin-right: 0;
 }
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px 40px;
   background-color: white;
 }
 
@@ -43,9 +45,19 @@ body {
   font-size: 28px;
 }
 
-.search-bar {
+.logo {
+  font-size: 28px;
+  color: #0028a4;
+  font-weight: bold;
+}
+
+.search-container {
   flex: 1;
-  margin: 0 20px;
+  padding: 0 40px;
+}
+
+.search-bar {
+  width: 100%;
   padding: 8px 12px;
   font-size: 16px;
 }
@@ -56,6 +68,7 @@ body {
   padding: 6px 10px;
   font-size: 14px;
   border-radius: 3px;
+  white-space: nowrap;
 }
 
 .main-content {
